@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1009642980380",
+    "project_id": "my-mihir-notes-flutter-project",
+    "storage_bucket": "my-mihir-notes-flutter-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009642980380:android:d0b7af3cdc2424133bcbd9",
+        "android_client_info": {
+          "package_name": "com.domain.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009642980380-u0g66308k44jstrqrrmn40ivc1nr22jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgvcPqehix3HWP0X3lo8wdIJrR19cu_yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009642980380-u0g66308k44jstrqrrmn40ivc1nr22jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
