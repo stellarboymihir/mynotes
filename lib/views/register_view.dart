@@ -60,9 +60,11 @@ class _RegisterViewState extends State<RegisterView> {
                   final email = _email.text;
                   final password = _password.text;
                   try{
-                    final userCredential =  FirebaseAuth.instance.createUserWithEmailAndPassword(
+                    final userCredential =  
+                    await FirebaseAuth.instance.createUserWithEmailAndPassword(
                     email: email, 
-                    password: password);
+                    password: password,
+                    );
                     print(userCredential);
                   }on FirebaseAuthException catch (e){
                     if(e.code == 'weak-password'){
@@ -77,7 +79,8 @@ class _RegisterViewState extends State<RegisterView> {
                 },
                 child: const Text('Register'),
               ),
-              TextButton(onPressed: (){
+              TextButton(
+                onPressed: (){
                 Navigator.of(context).pushNamedAndRemoveUntil(
                   '/login/', 
                   (route) => false
