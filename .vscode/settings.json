@@ -1,4 +1,11 @@
+// {
+//     "cmake.configureOnOpen": false,
+//     "cmake.sourceDirectory": "D:/Mihir/Coding/Flutter/mynotes/linux"
+// }
+
 {
-    "cmake.configureOnOpen": false,
-    "cmake.sourceDirectory": "D:/Mihir/Coding/Flutter/mynotes/linux"
+    "[dart]": {
+        "editor.defaultFormatter": "Dart-Code.dart-code",
+        "editor.formatOnSave": true
+     },
 }
