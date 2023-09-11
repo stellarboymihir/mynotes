@@ -7,5 +7,6 @@
     "[dart]": {
         "editor.defaultFormatter": "Dart-Code.dart-code",
         "editor.formatOnSave": true
-     },
+    },
+    "cmake.sourceDirectory": "D:/Mihir/Coding/Flutter/mynotes/build/windows/extracted/firebase_cpp_sdk",
 }
