@@ -39,18 +39,15 @@ class _NewNoteViewState extends State<NewNoteView> {
     _textController.addListener(_textControllerListener);
   }
 
-  Future<void> createNewNote() async {
+  Future<DatabaseNote> createNewNote() async {
     final existingNote = _note;
     if (existingNote != null) {
-      return; // Nothing to do, note already exists.
+      return existingNote; // Nothing to do, note already exists.
     }
     final currentUser = AuthService.firebase().currentUser!;
     final email = currentUser.email!;
     final owner = await _notesService.getUser(email: email);
     final newNote = await _notesService.createNote(owner: owner);
-    setState(() {
-      _note = newNote;
-    });
   }
 
   void _deleteNoteIfTextIsEmpty() {
