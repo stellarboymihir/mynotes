@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/foundation.dart';
 import 'package:mynotes/services/crud/crud_exceptions.dart';
 import 'package:sqflite/sqflite.dart';
@@ -195,7 +194,7 @@ class NotesService {
 
     return DatabaseUser(
       id: userId,
-      email: email.toLowerCase(),
+      email: email,
     );
   }
 
@@ -319,9 +318,9 @@ const noteTable = 'note';
 const userTable = 'user';
 const idColumn = 'id';
 const emailColumn = 'email';
-const userIdColumn = 'userId';
+const userIdColumn = 'user_id';
 const textColumn = 'text';
-const isSyncedWithCloudColumn = 'isSyncedWithCloud';
+const isSyncedWithCloudColumn = 'is_synced_with_cloud';
 const createUserTable = '''CREATE TABLE IF NOT EXISTS "user" (
 	      "id"	INTEGER NOT NULL,
 	      "email"	TEXT NOT NULL UNIQUE,
